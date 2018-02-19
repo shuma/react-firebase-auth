@@ -4,12 +4,12 @@ import { Link, withRouter } from "react-router-dom";
 import { auth } from "../firebase";
 import * as routes from "../constants/routes";
 
-const SignUpPage = ({ history }) => {
+const SignUpPage = ({ history }) => (
   <div>
     <h1>Sign Up Page</h1>
     <SignUpForm history={history} />
-  </div>;
-};
+  </div>
+);
 
 const INITIAL_STATE = {
   username: "",
